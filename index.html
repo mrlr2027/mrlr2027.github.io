@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>MRLR 2027 | Multimodal Representation Learning and Retrieval</title>
+    <meta
+      name="description"
+      content="MRLR is a proposed ICLR or CVPR 2027 workshop on multimodal representation learning, retrieval, re-ranking, and evaluation."
+    >
+    <link rel="icon" href="assets/mrlr-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="#" aria-label="MRLR home">
+          <span class="brand-mark" aria-hidden="true">MRLR</span>
+          <span class="brand-name">2027 Workshop Proposal</span>
+        </a>
+        <div class="nav-links">
+          <a href="#scope">Scope</a>
+          <a href="#invitation">Invited Speakers</a>
+          <a href="#organizers">Organizers</a>
+          <a class="nav-contact" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="shell hero-heading">
+          <p class="acronym">MRLR</p>
+          <h1>Multimodal Representation Learning and Retrieval</h1>
+        </div>
+
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <div class="venue-card">
+              <p class="venue-label">Target venue</p>
+              <strong>ICLR or CVPR 2027</strong>
+              <p class="venue-status">Proposed workshop - not yet submitted</p>
+            </div>
+            <p class="lede">
+              A focused forum for researchers building unified multimodal
+              embeddings, cross-modal retrieval systems, re-ranking methods,
+              and rigorous evaluation across images, video, audio, documents,
+              3D assets, and language.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button primary"
+                href="mailto:jilan@robots.ox.ac.uk?cc=jyx@robots.ox.ac.uk&amp;subject=MRLR%202027%20invited%20speaker%20interest"
+              >
+                Discuss an Invited Talk
+              </a>
+              <a class="button secondary" href="#invitation">Invitation Details</a>
+            </div>
+            <p class="status-note">
+              We are beginning preliminary invited-speaker conversations.
+              Availability and the final program remain subject to workshop
+              acceptance.
+            </p>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-header">
+              <div class="visual-label">Unified multimodal embedding</div>
+            </div>
+            <svg class="architecture-map" viewBox="0 0 560 370" role="presentation">
+              <defs>
+                <linearGradient id="encoder-fill" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#082d57"/>
+                  <stop offset="100%" stop-color="#124a80"/>
+                </linearGradient>
+                <linearGradient id="space-fill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#edf7f6"/>
+                  <stop offset="100%" stop-color="#ffffff"/>
+                </linearGradient>
+                <filter id="encoder-shadow" x="-30%" y="-30%" width="160%" height="170%">
+                  <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#082d57" flood-opacity="0.16"/>
+                </filter>
+              </defs>
+
+              <text class="map-title" x="18" y="26">INPUT MODALITIES</text>
+              <text class="map-title" x="404" y="26">EMBEDDING SPACE</text>
+
+              <g class="map-paths">
+                <path d="M136 66 C164 66 168 135 195 145"/>
+                <path d="M136 105 C164 105 170 147 195 154"/>
+                <path d="M136 144 C164 144 172 157 195 163"/>
+                <path d="M136 183 C164 183 172 174 195 171"/>
+                <path d="M136 222 C164 222 170 185 195 180"/>
+                <path d="M136 261 C164 261 168 197 195 189"/>
+                <path class="strong-path" d="M362 166 C384 166 393 166 414 166"/>
+              </g>
+
+              <g class="input-cards">
+                <rect x="18" y="47" width="118" height="35" rx="17.5"/>
+                <text x="35" y="70">T</text>
+                <text class="input-name" x="57" y="70">Text</text>
+                <rect x="18" y="86" width="118" height="35" rx="17.5"/>
+                <text x="35" y="109">I</text>
+                <text class="input-name" x="57" y="109">Image</text>
+                <rect x="18" y="125" width="118" height="35" rx="17.5"/>
+                <text x="35" y="148">V</text>
+                <text class="input-name" x="57" y="148">Video</text>
+                <rect x="18" y="164" width="118" height="35" rx="17.5"/>
+                <text x="35" y="187">A</text>
+                <text class="input-name" x="57" y="187">Audio</text>
+                <rect x="18" y="203" width="118" height="35" rx="17.5"/>
+                <text x="35" y="226">D</text>
+                <text class="input-name" x="57" y="226">Document</text>
+                <rect x="18" y="242" width="118" height="35" rx="17.5"/>
+                <text x="35" y="265">3D</text>
+                <text class="input-name" x="67" y="265">Asset</text>
+              </g>
+
+              <g class="encoder-card" filter="url(#encoder-shadow)">
+                <rect x="195" y="91" width="167" height="150" rx="22" fill="url(#encoder-fill)"/>
+                <text class="encoder-overline" x="278.5" y="126">ONE MODEL</text>
+                <text class="encoder-name" x="278.5" y="158">Unified</text>
+                <text class="encoder-name" x="278.5" y="182">Encoder</text>
+                <path d="M225 205 H332"/>
+                <text class="encoder-code" x="278.5" y="222">f(x) -&gt; z</text>
+              </g>
+
+              <g class="space-card">
+                <rect x="414" y="66" width="128" height="200" rx="18" fill="url(#space-fill)"/>
+                <circle class="point p1" cx="452" cy="112" r="5"/>
+                <circle class="point p2" cx="477" cy="103" r="4"/>
+                <circle class="point p3" cx="492" cy="127" r="5"/>
+                <circle class="point p4" cx="464" cy="137" r="4"/>
+                <circle class="point p5" cx="503" cy="153" r="4"/>
+                <circle class="point p6" cx="454" cy="163" r="5"/>
+                <path class="cluster" d="M442 105 C454 90 493 91 505 115 C515 137 500 169 467 172 C440 174 429 131 442 105Z"/>
+                <text class="space-name" x="478" y="204">Shared</text>
+                <text class="space-name" x="478" y="223">space</text>
+                <text class="space-code" x="478" y="245">z in R^d</text>
+              </g>
+
+              <g class="capability-row">
+                <rect x="18" y="313" width="155" height="37" rx="18.5"/>
+                <text x="95.5" y="337">Cross-modal retrieval</text>
+                <rect x="184" y="313" width="116" height="37" rx="18.5"/>
+                <text x="242" y="337">Re-ranking</text>
+                <rect x="311" y="313" width="108" height="37" rx="18.5"/>
+                <text x="365" y="337">Evaluation</text>
+                <rect x="430" y="313" width="112" height="37" rx="18.5"/>
+                <text x="486" y="337">Multimodal RAG</text>
+              </g>
+            </svg>
+            <div class="visual-footer">
+              <span>Many inputs</span>
+              <span>One model</span>
+              <span>One space</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shell fact-strip" aria-label="Workshop overview">
+          <div>
+            <span class="fact-label">Edition</span>
+            <strong>1st</strong>
+          </div>
+          <div>
+            <span class="fact-label">Proposed format</span>
+            <strong>Full-day workshop</strong>
+          </div>
+          <div>
+            <span class="fact-label">Invited talk</span>
+            <strong>Approximately 30 minutes</strong>
+          </div>
+          <div>
+            <span class="fact-label">Expected audience</span>
+            <strong>150-250 participants</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section themes" id="scope">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="section-kicker">Research Scope</p>
+            <h2>Topics we plan to bring together</h2>
+          </div>
+          <div class="theme-grid">
+            <article class="theme-card">
+              <span>01</span>
+              <h3>Unified Multimodal Embeddings</h3>
+              <p>
+                A single model that encodes text, images, video, audio,
+                documents, and other modalities into a unified
+                representation space.
+              </p>
+            </article>
+            <article class="theme-card">
+              <span>02</span>
+              <h3>Cross-Modal Retrieval</h3>
+              <p>
+                Retrieval across modalities, from text-to-video and
+                audio-visual search to document and 3D retrieval.
+              </p>
+            </article>
+            <article class="theme-card">
+              <span>03</span>
+              <h3>Composed Retrieval</h3>
+              <p>
+                Queries that combine modalities and constraints, including
+                image-plus-text retrieval and interactive refinement.
+              </p>
+            </article>
+            <article class="theme-card">
+              <span>04</span>
+              <h3>Fine-Grained Search</h3>
+              <p>
+                Instance-level and class-level matching that preserves local,
+                temporal, and identity-sensitive detail.
+              </p>
+            </article>
+            <article class="theme-card">
+              <span>05</span>
+              <h3>Re-ranking and Efficiency</h3>
+              <p>
+                Late interaction, query expansion, scalable indexing,
+                compression, and multi-stage retrieval pipelines.
+              </p>
+            </article>
+            <article class="theme-card">
+              <span>06</span>
+              <h3>Evaluation and Applications</h3>
+              <p>
+                Benchmarks, failure analysis, responsible deployment, and
+                retrieval for multimodal RAG and real-world systems.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section speakers" id="invitation">
+        <div class="shell">
+          <div class="speakers-heading">
+            <div>
+              <p class="section-kicker">Invited Speakers</p>
+              <h2>Invited Speakers</h2>
+            </div>
+            <p>
+              Proposed invited talks are approximately 30 minutes. This list
+              will be updated as invited speakers confirm participation.
+            </p>
+          </div>
+          <div class="speaker-table-wrap">
+            <table class="speaker-table">
+              <thead>
+                <tr>
+                  <th scope="col">Speaker</th>
+                  <th scope="col">Affiliation</th>
+                  <th scope="col">Research focus</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>TBD</strong></td>
+                  <td>Qwen Team</td>
+                  <td>Qwen-Embedding &amp; Qwen-VL-Embedding</td>
+                  <td><span class="speaker-status">Agreed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section organizers" id="organizers">
+        <div class="shell organizer-grid">
+          <div class="organizer-intro">
+            <p class="section-kicker">Organizers</p>
+            <h2><span>Visual Geometry Group</span><span>University of Oxford</span></h2>
+            <p class="organizer-note">
+              Additional organizers will be announced as the proposal
+              develops.
+            </p>
+          </div>
+          <div class="people" aria-label="Organizing team">
+            <article>
+              <div class="portrait-placeholder" role="img" aria-label="Photo placeholder for Jilan Xu">
+                <span>JX</span>
+              </div>
+              <h3>Jilan Xu</h3>
+              <p>Visual Geometry Group<br>University of Oxford</p>
+            </article>
+            <article>
+              <div class="portrait-placeholder" role="img" aria-label="Photo placeholder for Junyu Xie">
+                <span>JX</span>
+              </div>
+              <h3>Junyu Xie</h3>
+              <p>Visual Geometry Group<br>University of Oxford</p>
+            </article>
+            <article>
+              <div class="portrait-placeholder" role="img" aria-label="Photo placeholder for Andrew Zisserman">
+                <span>AZ</span>
+              </div>
+              <h3>Andrew Zisserman</h3>
+              <p>Visual Geometry Group<br>University of Oxford</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="shell contact-row" id="contact">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>Interested in contributing an invited perspective?</h2>
+            <p>
+              Please reach out for a preliminary discussion about potential
+              participation in MRLR 2027.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:jilan@robots.ox.ac.uk">jilan@robots.ox.ac.uk</a>
+            <a href="mailto:jyx@robots.ox.ac.uk">jyx@robots.ox.ac.uk</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-row">
+        <p><strong>MRLR 2027</strong> - Multimodal Representation Learning and Retrieval</p>
+        <p>Proposed workshop for ICLR or CVPR 2027</p>
+      </div>
+    </footer>
+  </body>
+</html>
